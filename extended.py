@@ -53,6 +53,21 @@ def main():
     """  cookies, headers, proxies or scope options below.         """
     """                                                            """
     """ ########################################################## """
+    # Adding proxy settings for use
+    options.identity.proxies = {
+    # No authentication
+    'http': 'http://127.0.0.1:8080',
+    'https': 'http://127.0.0.1:8080',
+
+    # Basic authentication
+    # 'http': 'http://user:pass@host:port',
+    # 'https': 'https://user:pass@host:port',
+
+    # SOCKS
+    #'http': 'socks5://user:pass@host:port',
+    
+    #'https': 'socks5://user:pass@host:port'
+}
 
 
 
